@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <title>Bryan Deagle</title>
+    <script>
+        function display(text) {
+            document.getElementsByTagName('h1')[0].innerHTML = text;
+            setTimeout(function () {
+                document.getElementsByTagName('h1')[0].innerHTML = 'Bryan Deagle';
+                }, 8000);
+            }
+    </script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background: rgb(27, 27, 27);
+        }
+        main {
+            height: 100vh;
+            width: 100vw;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div {
+            color: white;
+            font-family: 'Josefin Sans';
+            text-align: center;
+        }
+        h1 {
+            margin: 0 0 0.25em 0;
+            font-size: 64pt;
+        }
+        a {
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+            padding: 0 1em;
+            text-transform: uppercase;
+            font-size: 10pt;
+            margin: 0;
+        }
+        @media only screen and (max-device-width: 480px) {
+            h1 {font-size: 100pt;}
+            a {font-size: 20pt;}
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Bryan Deagle</h1>
+            <a onclick="display('bryan@dea.gl')">e-mail</a>
+            <a onclick="display('512-808-8211')">phone</a>
+            <a href="http://github.com/bryandeagle" target="blank">github</a>
+            <a href="http://twitter.com/bryandeagle" target="blank">twitter</a>
+        </div>
+    </main>
+</body>
+</html>
